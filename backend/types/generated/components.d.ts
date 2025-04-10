@@ -39,6 +39,17 @@ export interface ComponentsLink extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsNav extends Struct.ComponentSchema {
+  collectionName: 'components_components_navs';
+  info: {
+    displayName: 'nav';
+  };
+  attributes: {
+    link: Schema.Attribute.String;
+    link2: Schema.Attribute.String;
+  };
+}
+
 export interface ComponentsTitle extends Struct.ComponentSchema {
   collectionName: 'components_components_titles';
   info: {
@@ -60,7 +71,9 @@ export interface LayoutHeroSection extends Struct.ComponentSchema {
     heading: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     link: Schema.Attribute.Component<'components.link', false>;
+    Nav: Schema.Attribute.Component<'components.nav', false>;
     subHeading: Schema.Attribute.Text;
+    textField: Schema.Attribute.Text;
   };
 }
 
@@ -70,6 +83,7 @@ declare module '@strapi/strapi' {
       'components.button-cta': ComponentsButtonCta;
       'components.header': ComponentsHeader;
       'components.link': ComponentsLink;
+      'components.nav': ComponentsNav;
       'components.title': ComponentsTitle;
       'layout.hero-section': LayoutHeroSection;
     }
