@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_titles",
+  "info": {
+    "displayName": "title",
+    "icon": "gate"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

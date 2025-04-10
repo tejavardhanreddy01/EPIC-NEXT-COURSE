@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_components_button_ctas",
+  "info": {
+    "displayName": "ButtonCTA",
+    "icon": "gate"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline",
+        "outline-icon"
+      ]
+    }
+  }
+}
