@@ -15,6 +15,18 @@ export interface ComponentsButtonCta extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsFooter extends Struct.ComponentSchema {
+  collectionName: 'components_components_footers';
+  info: {
+    displayName: 'footer';
+    icon: 'arrowDown';
+  };
+  attributes: {
+    address: Schema.Attribute.String;
+    logo: Schema.Attribute.Media<'images'>;
+  };
+}
+
 export interface ComponentsHeader extends Struct.ComponentSchema {
   collectionName: 'components_components_headers';
   info: {
@@ -81,6 +93,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'components.button-cta': ComponentsButtonCta;
+      'components.footer': ComponentsFooter;
       'components.header': ComponentsHeader;
       'components.link': ComponentsLink;
       'components.nav': ComponentsNav;

@@ -396,6 +396,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
         'components.link',
         'components.header',
         'components.button-cta',
+        'components.footer',
       ]
     >;
     publishedAt: Schema.Attribute.DateTime;

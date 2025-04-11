@@ -17,7 +17,8 @@
         "components.title",
         "components.link",
         "components.header",
-        "components.button-cta"
+        "components.button-cta",
+        "components.footer"
       ]
     }
   }

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_components_footers",
+  "info": {
+    "displayName": "footer",
+    "icon": "arrowDown"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
